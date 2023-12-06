@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#how-to-contribute)
+  * [Credits](#credits)
   * [Tests](#tests)
   * [Questions?](#questions)
 
@@ -71,7 +71,7 @@ function generateMarkdown(data) {
 
   ## Credits
   
-  ###Github: ${data.contributors}
+  Github: ${data.contributors}
 
 
   ## Tests
