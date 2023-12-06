@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [How to Contribute](#how-to-contribute)
+  * [Credits](#how-to-contribute)
   * [Tests](#tests)
   * [Questions?](#questions)
 
@@ -64,7 +64,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
 
-  ## How To Use
+  ## Usage
 
   ${data.usage}
 
