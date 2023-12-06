@@ -43,7 +43,6 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Demo](#demo)
   * [How to Contribute](#how-to-contribute)
   * [Tests](#tests)
   * [Questions?](#questions)
@@ -70,10 +69,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
 
-  ## How to Contribute
-
-  [Contributor Covenant](https://www.contributor-covenant.org/)  
-  ${data.contributors}
+  ## Credits
+  
+  ###Github: ${data.contributors}
 
 
   ## Tests
