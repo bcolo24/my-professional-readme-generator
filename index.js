@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = () => {
-
-
     return inquirer.prompt(
     [
         {
@@ -40,7 +38,8 @@ const questions = () => {
                 'MIT',
                 'Apache 2.0',
                 'Mozilla',
-                'Eclipse'
+                'Eclipse',
+                'N/A'
             ]
         },
 
@@ -62,16 +61,7 @@ const questions = () => {
             message:'Enter Github username.'
         }
     ])
-    // .then((data) => {
-    //     console.log(data);
-    // })
-    // .catch((error) => {
-    //     if (error.isTtyError) {
-    //         console.log("There was an error");
-    //     } else {
-    //         console.log("Something went wrong");
-    //     }
-    // })
+    //user input to put into generate markdown function
     .then(data => {
         const userMarkdown = generateMarkdown(data);
 
@@ -82,14 +72,14 @@ const questions = () => {
     });
 }
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(userMarkdown) {
     const fileName = 'README.md'
     fs.writeFile(fileName, userMarkdown, error => {
         if (error) {
-            console.log('Error writing README file:', error);
+            console.log('Something went wrong creating the README file.', error);
         } else {
-            console.log(`${fileName} Successfully generated!`);
+            console.log(`${fileName} Has been successfully generated!`);
         }
     });
 }
@@ -100,5 +90,4 @@ function init() {
 }
 
 // Function call to initialize app
-
 init();
